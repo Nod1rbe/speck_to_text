@@ -162,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen>
                               ),
                             ),
                             Text(
-                              'Smart Media Search',
+                              'Smart Search',
                               style: TextStyle(
                                 color: _textSecondary,
                                 fontSize: 13,
