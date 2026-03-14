@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'data/ai_service.dart';
 import 'logic/search_cubit.dart';
 import 'presentation/screens/home_screen.dart';
 
 void main() {
-  const String openAiApiKey =
-      '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';
-  const String elevenLabsApiKey =
-      'sk_0a932a27d172b69c226f4f6058441a7edb376e2d7bba6e88';
+  final String openAiApiKey = dotenv.env['OPENAI_API_KEY'] ?? '';
+  final String elevenLabsApiKey = dotenv.env['ELEVEN_LABS_API_KEY'] ?? '';
 
   final aiService = AiService(
     openAiApiKey: openAiApiKey,
