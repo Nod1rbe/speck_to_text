@@ -174,7 +174,6 @@ class _HomeScreenState extends State<HomeScreen>
                     ),
                     const SizedBox(height: 32),
 
-                    // File type selector
                     Text(
                       'SELECT FILE TYPE',
                       style: TextStyle(
